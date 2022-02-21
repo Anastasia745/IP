@@ -1,0 +1,49 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Chango";
+    color:rgb(172, 78, 16);
+}
+  
+@media (min-width: 600px)
+{
+    .main_cont
+    {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
+
+.main_cont div
+{
+    margin:10px;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1 1 100px;
+}
+
+.f1
+{
+    background-color: #82dbbd;
+    max-width: 200px;
+}
+.f3
+{
+    background-color: #f0a9d5;
+    min-width: 200px;
+}  
+.f2
+{
+    background-color: #f3bf8e;
+    max-width: 200px;
+}
+
+.row > *
+{
+    border: 1px solid rgb(255, 255, 255);
+    background-color:#f3bf8e;
+}
+
+

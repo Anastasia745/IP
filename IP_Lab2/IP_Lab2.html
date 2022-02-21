@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>IP_Lab2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body bgcolor = "#E6E6FA">
+        <div class = "main">
+            <div></div>
+
+            <div class = "body">
+                <div class = "title">
+                    <h3>Form</h3>
+                </div>
+
+                <form id = "Input" name = "Input">
+
+                    <div class = "Input">
+                        <legend>Input line</legend>
+                        <p><input type = "text" id = "input_line" name = "input_line" class = "text" required size = '30' maxlength = '30'/></p><br><!--  onkeyup = "return proverkaText(this);" -->
+                    </div>
+
+                    <div class = "Radio">
+                        <legend>Radio</legend>
+                        <p><input type = "radio" id = "rad_position1" name = "Radio" value = "1">    Position 1</input></p>
+                        <p><input type = "radio" id = "rad_position2" name = "Radio" value = "2">    Position 2</input></p>
+                        <p><input type = "radio" id = "rad_position3" name = "Radio" value = "3">    Position 3</input></p><br>
+                        <label for = "Radio" class = "error"></label>
+                    </div>
+                    
+                    <div class = "CheckBox" name = "CheckBox">
+                        <legend>CheckBox</legend>
+                        <p><input type = "checkbox" class = "checkbox" id = "check_position1" name = "check_position1" value = "1">  Position 1</input></p>
+                        <p><input type = "checkbox" class = "checkbox" id = "check_position2" name = "check_position2" value = "2">  Position 2</input></p>
+                        <p><input type = "checkbox" class = "checkbox" id = "check_position3" name = "check_position3" value = "3">  Position 3</input></p>
+                        <label for = "CheckBox" class = "error"></label>
+                    </div>
+                    
+                    <p><button type = "submit" class = "b_send" id = "b_send" onclick = "proverkaRadio()">Send</button></p>
+                </form>
+
+                <link href = "Lab2.css" rel = "stylesheet" type = "text/css">
+                <script src = "Lab2.js"></script>
+                
+                <script src="js/lib/jquery.js"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+                <script src="js/dist/jquery.validate.js"></script>
+            </div>
+
+            <div></div>
+        </div>
+    </body>
+
+    <script>
+        function line(input)
+        {
+            var l = input.value;
+            l = localStorage.getItem("line");
+            input.value = l;
+            return input.value;
+        }
+
+        $(function()
+        {
+            
+
+            $.validator.addMethod("Input", function(value, element)
+            {
+                return !(/[-\.;":'a-zA-Z]/).test(value);
+            }, "Please don't insert letters")
+            
+            $('#Input').validate(
+            {
+                rules:
+                {
+                    input_line: "required Input",
+                        required: true,
+                    check_position1:
+                    {
+                        required: true,
+                    },
+                    check_position3:
+                    {
+                        required: true,
+                    }
+                },
+                messages:
+                {
+                    input_line:
+                    {
+                        required: "This field is required"
+                    },
+                    check_position1:
+                    {
+                        required: " !"
+                    },
+                    check_position3:
+                    {
+                        required: " !"
+                    }
+                }
+            });
+        });
+
+
+        line(input_line);
+    </script>
+
+    
+</html>
+
+

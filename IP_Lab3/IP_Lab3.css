@@ -1,0 +1,49 @@
+@media (min-width: 480px)
+{
+    .main
+    {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.main div
+{
+    flex: 1 1 100px;
+}
+
+.Select
+{
+    outline: none;
+    appearance: none;
+    width: 100%;
+    min-height: 35;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 10px 10px 15px;
+    font-family: sans-serif; 
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 167, 133);
+}
+
+.city
+{
+    outline: none;
+    width: 100%;
+    border: 5px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: sans-serif;
+    background-color: rgb(138, 83, 163);
+    color: rgb(255, 255, 255);
+}

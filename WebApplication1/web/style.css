@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17.05.2021, 16:28:12
+    Author     : Анастасия
+*/
+.sign_in, .sign_up
+{
+    min-width:330px;
+    background-color:#fff;
+    color: #000;
+    font-size:20px;
+    text-transform:uppercase;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.username_signIn, .password_signIn, .username_signUp, .password_signUp1, .password_signUp2
+{
+    top: 10%;
+    width: 80%;
+    font-size: 18px;
+    padding:10px 20px 10px 20px;
+    border-style:solid;
+    border-width: 1px;
+    outline-width: 1px;
+    outline-color: rgb(84, 151, 238);
+    border-color: rgb(184, 182, 182);
+}
+
+.submit_signIn, .submit_signUp
+{
+    width:92.5%;
+    border-style:solid;
+    border-width: 1px;
+    outline-width: 1px;
+    font-size: 18px;
+    padding:10px 20px 10px 20px;
+    background-color: rgb(200, 34, 217);
+    border-color: rgb(190, 24, 207);
+    color: #fff;
+}
+
+.In, .Up, .choice
+{
+    position: fixed;
+    top: 30%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.sign_up_link
+{
+    color:rgb(23, 144, 214);
+    padding: 50px;
+    position: fixed;
+    top: 90%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.upload_form
+{
+    min-width:330px;
+    background-color:#fff;
+    color: #000;
+    font-size:20px;
+    text-transform:uppercase;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upload
+{
+    width:92.5%;
+    border-style:solid;
+    border-width: 1px;
+    outline-width: 1px;
+    font-size: 18px;
+    padding:10px 20px 10px 20px;
+    background-color: rgb(200, 34, 217);
+    border-color: rgb(190, 24, 207);
+    color: #fff;
+}
+
+.file
+{
+    width:92.5%;
+    padding:10px 20px 10px 20px;
+}

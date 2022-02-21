@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE projects SYSTEM 'portfolio.dtd'> -->
+<root>
+<projects xmlns:miet="http://www.w3.org/2001/XMLSchema-instance" miet:schemaLocation="portfolio.xsd">
+    <project id="000001" year="2017">
+        <title>Student Assistant</title>
+        <authors>
+          <author country="RU">aaa</author>
+          <author country="RU">Osip Fatkullin</author>
+        </authors>
+        <img width="185" height="46" href="https://miet.ru/bitrix/templates/.default/img/miee_logo2.png"/>
+        <vuz>МИЭТ</vuz>
+        <annotation>
+            Портал(доска) объявлений которая позволяет осуществлять информирование студентов и конечно главным плюсом является то, что информация надежно хранится и доступна откуда угодно(в отличии от “обычных” досок объявлений). К примеру, вакансии различных компаний,
+        </annotation>
+    </project>
+    <project id="000002" year="2017">
+        <title>Student Assistant</title>
+        <authors>
+          <author country="RU">Iliya Soloviev</author>
+        </authors>
+        <vuz>МИЭТ</vuz>
+        <annotation>
+            Мобильное приложение будет обеспечивать:
+            отображение расписания: показывается расписание в удобном для пользователя виде с учетом порядка пар;
+            добавление и изменение расписания;
+            скрытие ненужных пар в общем расписании;
+            просмотр домашних заданий;
+            добавление, изменение и удаление домашнего задания;
+            автоматическая установка будильника в зависимости от расписания: приложение будит пользователя за установленное время до первой пары;
+            синхронизация расписания с сервером;
+            возможность автоматического получения расписания от вуза в формате XML или JSON.
+        </annotation>
+    </project>
+    <project id="000003" year="2017">
+        <title>Rejnting Vusov</title>
+        <authors>
+          <author country="RU">Iliya Bulatov</author>
+          <author country="RU">Boris Tulkin</author>
+        </authors>
+        <vuz>МИЭТ</vuz>
+        <annotation>Мобильное приложение “Рейтинг ВУЗов” позволяет:
+            1. осуществить поиск ВУЗа из списка доступных;
+            2. среди информации о выбранном заведении:
+            a. рейтинг ВУЗа, взятый из официальных источников;
+            b. список специальностей;
+            c. проходной балл на специальность;
+            d. список преподавателей с указанием рейтинга, сформированного на основе отзывов студентов;
+            e. мини-форум для общения студентов и абитуриентов;
+            f. прочая информация;
+        </annotation>
+    </project>         
+    <project id="000004" year="2017">
+        <title>MarkMe</title>
+        <authors>
+          <author country="RU">Arina Fomina</author>
+          <author country="RU">Dmitry Kogtev</author>
+          <author country="RU">Irina Zueva</author>
+        </authors>
+        <vuz>МИЭТ</vuz>
+        <annotation>
+            Приложение предназначено для пользователей мобильных устройств на базе OS Android.  Мобильное приложение «MarkMe» предназначено для помощи преподавателю с проверкой посещаемости, обеспечивает автоматизированный процесс составления списка студентов, находящихся в это время в аудитории.
+        </annotation>
+        <json>https://github.com/oclaw/MarkMe/tree/master/jsonexamples</json>
+    </project>    
+    <project id="000005" year="2017">
+        <title>FashionGram</title>
+        <authors>
+          <author country="RU">Dmitry Buyanov</author>
+          <author country="RU">Baygunusov Ruslan</author>
+          <author country="RU">Kusachev Daneel</author>
+          <author country="RU">Demchinskaya Polina</author>
+        </authors>
+        <vuz>МИЭТ</vuz>
+        <annotation>
+            Возможность выкладывать, как положительно так и отрицательно оценивать фотографии, возможность автоматического удаления спустя определенное время. Сохранение фотографий в личном архиве. Полная анонимность. Общий рейтинг фотографий
+        </annotation>
+    </project>
+    <project id="000006" year="2017">
+        <title>getrasp</title>
+        <authors>
+          <author country="RU">Denis Zavedeev</author>
+          <author country="RU">Nikitin Michael</author>
+          <author country="RU">Novikov Alexey</author>
+        </authors>
+        <vuz>МИЭТ</vuz>
+        <annotation>
+            Веб-приложение позволит:
+            1. Просматривать расписание каждой из групп в режимах “День”, “Неделя”, “Месяц”
+            2. Экспортировать расписание в Google Calendar
+            3. Преподавателю отправлять сообщения группам студентов.
+            4. Студентам добавлять заметки к предметам.
+            5. Просматривать расписание преподавателей, с возможностью просмотра их предположительного местоположения в конкретный день на конкретной паре.
+            6. Загружать расписание других вузов в установленном формате.
+            Мобильное приложение позволит:
+            1. Просматривать расписание занятий
+            2. Просматривать расписание преподавателей
+            3. Просматривать отправленные преподавателями сообщения
+            4. Просматривать, редактировать, добавлять заметки            
+        </annotation>
+    </project>         
+</projects>
+</root>

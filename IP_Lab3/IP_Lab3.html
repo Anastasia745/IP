@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cities</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+
+        <div class = "main">
+            <div></div>
+
+            <div class = "body">
+                <!--<input type="text" name="country" class="country"><br><br>-->
+                <select id="Select" class="Select">
+                    <option value="0">Австралия</option>
+                    <option value="1">Бразилия</option>
+                    <option value="2">Великобритания</option>
+                    <option value="3">Россия</option>
+                    <option value="4">Италия</option>
+                    <option value="5">Франция</option>
+                </select>
+
+                <p><textarea name="city" class="city" rows="15"></textarea></p>
+
+                <link href = "IP_Lab3.css" rel = "stylesheet" type = "text/css">
+                <script>
+                    $(document).ready(function()
+                    {
+                        //$('button.Send').on('click', function()
+                        $("#Select").change(function()
+                        {
+                            //var countryValue = $('input.country').val();
+                            var countryValue = $("#Select option:selected").text()
+                            $.ajax(
+                            {
+                                method: "POST",
+                                url: "IP_Lab3.php",
+                                data:
+                                {
+                                    country: countryValue,
+                                },
+                                success: function(data)
+                                {
+                                    $('textarea.city').val(data);
+                                }
+                            })
+                            .done(function(){});  
+                        })
+                    });
+                    
+                </script>
+            </div>
+
+            <div></div>
+        </div>
+    </body>
+</html>
